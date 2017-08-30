@@ -1,0 +1,81 @@
+/*
+ * common
+ */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "ヒラギノ角ゴ ProN W3", Meiryo, sans-serif;
+}
+
+.hero .nav {
+    background: #3273dc;
+    opacity: 0.8;
+}
+
+.nav {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.nav .caption {
+    font-size: 2rem;
+}
+
+.caption {
+    font-family: 'Montserrat';
+}
+
+h1.title {
+    font-size: 6rem;
+}
+
+.button {
+    border-radius: 80px;
+}
+
+/*
+ * sns
+ */
+a.twitter {
+    color: #55acee;
+}
+a.facebook {
+    color: #3B5998;
+}
+a.github {
+    color: #111111;
+}
+a.wordpress {
+    color: #464646;
+}
+
+/*
+ * profile
+ */
+.profile-icon {
+    border-radius: 50%;
+    padding: 50px;
+}
+
+/*
+ * card
+ */
+.card-header-title {
+    font-size: 0.8rem;
+    background-color: whitesmoke;
+}
+
+.card-image {
+    border-top: 1px solid #dddddd;
+    border-bottom: 1px solid #dddddd;
+}
+
+.card-content {
+    padding: 0 1.2rem 1.2rem
+}
+
+.panel-block-item p {
+    font-size: 0.75rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
