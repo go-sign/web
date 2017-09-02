@@ -1,5 +1,6 @@
-var webpack = require('webpack');
-var path = require('path');
+const webpack = require('webpack');
+const path = require('path');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
@@ -22,11 +23,17 @@ module.exports = {
       },
       {
         test: /\.(css|sass)?$/,
-        loaders: ['style-loader', 'css-loader', 'sass-loader']
+        loader: ExtractTextPlugin.extract({
+          use: ['css-loader', 'sass-loader']
+        }),
       }
     ]
   },
   plugins: [
+    new ExtractTextPlugin({
+      filename: 'site.css',
+      allChunks: true
+    }),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         drop_console: true
