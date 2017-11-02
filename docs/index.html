@@ -444,11 +444,7 @@
             <div class="column">
                 <div class="content">
                     <ul class="has-text-left">
-                        <li>2017/09/16 <a href="https://2017.tokyo.wordcamp.org/">WordCamp Tokyo 2017</a> にマイクロスポンサーとして協賛しました。</li>
-                        <li>2016/09/17 <a href="https://2016.tokyo.wordcamp.org/">WordCamp Tokyo 2016</a> にマイクロスポンサーとして協賛しました。</li>
-                        <li>2016/05/14 <a href="https://www.ospn.jp/osc2016-gunma/">OSC 2016 Gunma</a> にてセッション登壇しました。</li>
-                        <li>2015/10/31 <a href="https://2015.tokyo.wordcamp.org/">WordCamp Tokyo 2015</a> にリンクスポンサーとして協賛しました。</li>
-                        <li>2012/01/01 ゴーサイン活動開始</li>
+                        <li v-for="post of posts">{{post.post_date}} <a v-bind:href="post.link">{{post.title.rendered}}</a></li>
                     </ul>
                     <a href="https://blog.go-sign.info/" class="button is-info">もっと見る</a>
                 </div>
