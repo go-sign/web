@@ -83,3 +83,10 @@ a.wordpress {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
+/*
+ * form
+ */
+iframe {
+    max-width: 100% !important;
+}
